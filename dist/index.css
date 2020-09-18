@@ -1,0 +1,99 @@
+/* {*} selector will determins the elements(like <p><div>) in the background, 
+but body selector will determine the text in the background */
+*{
+	box-sizing: border-box;}
+
+
+body{
+	font-size: 25px;
+	font-family: 'Itim', cursive;
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: lightpink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 10px 12px 20px rgba(0,0,0,3);
+	width: 350px;
+
+}
+
+form{
+	padding: 10px 20px;
+}
+
+h2{
+	text-align: center;
+	margin: 5px 0 20px;
+}
+
+.form-control{
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.form-control input:focus{
+	background-color: #EAF2F8;
+	border-color: white;
+}
+
+/*this is a success class in the input */
+.form-control.success input{
+	border-color:#5DADE2;
+	outline:1px solid #5DADE2;
+}
+
+/*this is a error class in the input */
+.form-control.error input{
+	border: 2px solid #E74C3C;
+	outline:1px solid #E74C3C; 
+}
+
+label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+input{
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	font-size: 20px;
+	border:1px solid #BFC9CA;
+	outline: 2px solid #E5E7E9;
+}
+
+
+.form-control small{
+	color: #E74C3C;
+	font-size: 14px;
+	position: absolute;
+	left: :0;
+	bottom: 0;
+	visibility: hidden;
+}
+
+/*when there is error message, 
+the small tag will be visiable*/
+.form-control.error small{
+	visibility: visible;
+}
+
+.form button{
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #5499C7;
+	border-style: hidden;
+	color:white;
+	width: 100%;
+	padding: 5px;
+	margin-top: 10px;
+}
