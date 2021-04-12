@@ -97,3 +97,9 @@ the small tag will be visiable*/
 	padding: 5px;
 	margin-top: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+		width: 90%;
+	}
+  }
